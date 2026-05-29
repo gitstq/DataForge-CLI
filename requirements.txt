@@ -1,0 +1,3 @@
+# DataForge-CLI - 零依赖声明
+# 本项目为纯Python实现，不依赖任何第三方库
+# 仅使用Python标准库

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "dataforge-cli"
+version = "1.0.0"
+description = "轻量级终端JSON/YAML数据智能处理与转换引擎"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [
+    {name = "DataForge Team", email = "dataforge@example.com"}
+]
+keywords = ["json", "yaml", "toml", "csv", "cli", "data-processing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+    "Environment :: Console",
+]
+
+[project.scripts]
+dataforge = "dataforge_cli.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools]
+packages = ["dataforge_cli", "dataforge_cli.core", "dataforge_cli.tui", "dataforge_cli.utils", "dataforge_cli.tests"]
